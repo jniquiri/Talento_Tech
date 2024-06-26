@@ -2,10 +2,8 @@
 print (0b1001)
 print (0xb16a)
 
-
 name, surname, age = "jorge", "Niquinás", "57"
 print ("Mi nombre es:  {} {} y mi edad es : {}". format(name, surname,age))
-
 
 languaje = "querido mundo"
 languaje2 = "QUERIDO MUNDO"
@@ -20,11 +18,13 @@ Nomb2 = input("Ingesa tu apellido: ")
 print("hola: ", Nomb1, Nomb2)
 Edad = int(input("¿Cuantos años tienes?: "))
 print("Tu edad es:", Edad)
+print("\n**********     F I N     **********")
 
 #listadepalabras = ['hormiga, babuino, tejon, murcielago, oso, castor camello, gato, almeja, cobra, pantera, coyote, cuervo, ciervo, perro, burro, pato, aguila, huron, zorro, rana, cabra, ganso, halcon, leon, lagarto, llama, topo, mono, alce, raton, mula, salamandra, nutria, buho, panda, loro, paloma, piton, conejo, carnero, rata, cuervo, rinoceronte, salmon, foca, tiburon, oveja, mofeta, perezoso, serpiente, araña, cigüeña, cisne, tigre, sapo, trucha, pavo, tortuga, comadreja, ballena, lobo, wombat, cebra'].split()
-
 #print(listadepalabras)
+
 """Programa verificación tipo de datos"""
+
 Var_Entero = int(input("Esciba un valor entero corto: "))
 Var_Largo = int(input("Esciba un valor entero largo: "))
 Var_Real = float(input("Esciba un valor con decimales: "))
@@ -40,4 +40,23 @@ print(Var_Entero, type(Var_Entero))
 print(Var_Complejo, type(Var_Complejo))
 print(Var_Cadena, type(Var_Cadena))
 print(Var_booleano, type(Var_booleano))
-print("\n F I N \n Programa tipo de datos n Pthon")
+print("\n**********     F I N     **********")
+
+#Progama calcula promedio, media y moda de un conjunto
+import numpy as np
+import statistics
+
+print("!Hello, World!\n")
+
+velocidad = [99,86,87,88,111,86,103,87,94,78,77,85,86]
+
+promedio = np.mean(velocidad)
+mediana = np.median(velocidad)
+#mediana = np.moda(velocidad)
+mode = statistics.mode(velocidad)
+
+print("Promedio: ", (round(promedio,2)))
+print("Mediana: ", mediana)
+print("Moda:", mode)
+
+print("\n**********     F I N     **********")
